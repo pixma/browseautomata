@@ -1,14 +1,11 @@
 package com.browseautomata.app;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.browseautomata.app.NetLookup;
 
 public class admin {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		WebDriver webWindow = new ChromeDriver();
+		new NetLookup("netlookup", 30000, "8.8.8.8" ).start();
 	}
-
 }
